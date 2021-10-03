@@ -18,8 +18,5 @@ def fcnTimestamp():
 
     # IF the timestamp had less than 10ms, the loop has broken here
 
-    print("")
-    print(timestamp)
-
-    return
+    return(timestamp)
 
