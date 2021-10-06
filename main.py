@@ -1,4 +1,4 @@
-from ClLocatable import *
+from ClDeviceBT import *
 from FcnBTScan import *
 from fcnOutputRSSIList import *
 from fcnTimestamp import fcnTimestamp
@@ -8,7 +8,7 @@ import os
 dctDevices = {}
 scanLoopCtrl = 10
 
-# start scan loop with break by key press
+# scan loop with break by key press
 while scanLoopCtrl > 0:
 
     # call function to wait for 1s steps
@@ -22,5 +22,17 @@ while scanLoopCtrl > 0:
     # output the devices and rssi formated
     print(timestamp)
     fcnOutputRSSIList(dctDevices)
+
+    
+    for nDevice in dctDevices:
+        # IF macAddress already exists in any device object -> pass
+        if 1 = 0:
+            # update rssi
+        # IF macAddress DOES NOT yes exist
+        else:
+            # create new object with mac and rssi
+
+    # NEXT: logic to check, which mac addresses/objects timed out...
+
 
     scanLoopCtrl -= 1
